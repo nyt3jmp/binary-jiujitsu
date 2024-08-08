@@ -8,10 +8,10 @@ function BaseFooter() {
           <div className="col-lg-4 col-md-6 col-12 text-white">
             {/* about company */}
             <div className="mb-4">
-              <h1>Cavepainter</h1>
+              <h1>Desphixs</h1>
               <div className="mt-4">
                 <p>
-                  Cavepainter is an LLM based translator app that is able to replace text in several different file formats. Is rly cool.
+                  Cavepainter is a cool ass translator tool.
                 </p>
                 {/* social media */}
                 <div className="fs-4 mt-4">
@@ -99,11 +99,6 @@ function BaseFooter() {
                 <li>
                   <a href="#" className="nav-link text-white">
                     Help and Support
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="nav-link text-white">
-                    Become a caveman
                   </a>
                 </li>
                 <li>

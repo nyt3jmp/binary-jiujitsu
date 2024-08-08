@@ -1,9 +1,16 @@
+import { useEffect } from 'react'
 import React from 'react'
 import BaseHeader from '../partials/BaseHeader'
 import BaseFooter from '../partials/BaseFooter'
+import { logout } from '../../utils/auth'
+import { Link } from 'react-router-dom';
+
 
 
 function Logout() {
+  useEffect(() => {
+    logout();
+  }, []);
   return (
     <>
       <BaseHeader />
@@ -16,17 +23,21 @@ function Logout() {
                 <div className="mb-4">
                   <h1 className="mb-1 fw-bold">You have been logged out</h1>
                   <span>
-                    Thanks for visiing our website, come back anytime!
+                    Thanks for visiting our website, come back anytime!
                   </span>
                 </div>
                 <form className="needs-validation mt-5" noValidate="">
                   <div className="d-grid d-flex">
-                    <button type="submit" className="btn btn-primary me-2 w-100">
+                    <Link 
+                      to={'/login/'}
+                      className="btn btn-primary me-2 w-100">
                       Login <i className='fas fa-sign-in-alt'></i>
-                    </button>
-                    <button type="submit" className="btn btn-primary w-100">
+                    </Link>
+                    <Link 
+                      to={'/register/'}
+                      className="btn btn-primary w-100">
                       Register <i className='fas fa-user-plus'></i>
-                    </button>
+                    </Link>
                   </div>
                 </form>
               </div>

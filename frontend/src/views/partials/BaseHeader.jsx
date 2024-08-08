@@ -41,7 +41,7 @@ function BaseHeader() {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    <i className="fas fa-chalkboard-user"></i> Options
+                                    <i className="fas fa-chalkboard-user"></i> User
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li>
@@ -53,16 +53,29 @@ function BaseHeader() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link className="dropdown-item" to={`/user/my-files/`}>
+                                        <Link className="dropdown-item" to={`/user/files/`}>
                                             <i className="fas fa-shopping-cart"></i> My Files
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
                                             className="dropdown-item"
-                                            to={`/user/translate/`}
+                                            to={`/user/start-job/`}
                                         >
-                                            <i className="fas fa-plus"></i> Translate
+                                            <i className="fas fa-plus"></i> Start job
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" to={`/user/reviews/`}>
+                                            <i className="fas fa-star"></i> Reviews{" "}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className="dropdown-item"
+                                            to={`/user/question-answer/`}
+                                        >
+                                            <i className="fas fa-envelope"></i> Q/A{" "}
                                         </Link>
                                     </li>
                                     <li>
@@ -72,14 +85,13 @@ function BaseHeader() {
                                     </li>
                                 </ul>
                             </li>
-
                         </ul>
                         <form className="d-flex" role="search">
                             <input
                                 className="form-control me-2 w-100"
                                 type="search"
-                                placeholder="Search Cavepainter"
-                                aria-label="Search Cavepainter"
+                                placeholder="Search Courses"
+                                aria-label="Search Courses"
                             />
                             <button className="btn btn-outline-success w-50" type="submit">
                                 Search <i className="fas fa-search"></i>
